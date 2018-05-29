@@ -483,24 +483,10 @@ public class ButonScript : MonoBehaviour {
     }
     void TaniButonlari()
     {
-        Buttons[0] = GameObject.FindWithTag("buton1");
-        Buttons[1] = GameObject.FindWithTag("buton2");
-        Buttons[2] = GameObject.FindWithTag("buton3");
-        Buttons[3] = GameObject.FindWithTag("buton4");
-        Buttons[4] = GameObject.FindWithTag("buton5");
-        Buttons[5] = GameObject.FindWithTag("buton6");
-        Buttons[6] = GameObject.FindWithTag("buton7");
-        Buttons[7] = GameObject.FindWithTag("buton8");
-        Buttons[8] = GameObject.FindWithTag("buton9");
-        Buttons[9] = GameObject.FindWithTag("buton10");
-        Buttons[10] = GameObject.FindWithTag("buton11");
-        Buttons[11] = GameObject.FindWithTag("buton12");
-        Buttons[12] = GameObject.FindWithTag("buton13");
-        Buttons[13] = GameObject.FindWithTag("buton14");
-        Buttons[14] = GameObject.FindWithTag("buton15");
-        Buttons[15] = GameObject.FindWithTag("buton16");
-
-
+       for (int i = 0; i < 16; i++)
+        {
+            Buttons[0] = GameObject.FindWithTag("buton" + (i + 1).ToString());
+        }
         
         //Vector2 artiX = new Vector2();
         //artiX.x = -4;
@@ -521,27 +507,16 @@ public class ButonScript : MonoBehaviour {
     }
     void taniAutolari()
     {
-        ButtonsAuto[0] = GameObject.FindWithTag("butonAuto1");
-        ButtonsAuto[1] = GameObject.FindWithTag("butonAuto2");
-        ButtonsAuto[2] = GameObject.FindWithTag("butonAuto3");
-        ButtonsAuto[3] = GameObject.FindWithTag("butonAuto4");
-        ButtonsAuto[4] = GameObject.FindWithTag("butonAuto5");
-        ButtonsAuto[5] = GameObject.FindWithTag("butonAuto6");
-        ButtonsAuto[6] = GameObject.FindWithTag("butonAuto7");
-        ButtonsAuto[7] = GameObject.FindWithTag("butonAuto8");
-        ButtonsAuto[8] = GameObject.FindWithTag("butonAuto9");
-        ButtonsAuto[9] = GameObject.FindWithTag("butonAuto10");
-        ButtonsAuto[10] = GameObject.FindWithTag("butonAuto11");
-        ButtonsAuto[11] = GameObject.FindWithTag("butonAuto12");
-        ButtonsAuto[12] = GameObject.FindWithTag("butonAuto13");
-        ButtonsAuto[13] = GameObject.FindWithTag("butonAuto14");
-        ButtonsAuto[14] = GameObject.FindWithTag("butonAuto15");
-        ButtonsAuto[15] = GameObject.FindWithTag("butonAuto16");
-
         for (int i = 0; i < 16; i++)
         {
-          //  Debug.Log(ButtonsAuto[i].name);
+            ButtonsAuto[0] = GameObject.FindWithTag("buton" + (i + 1).ToString());
         }
+
+      /*  for (int i = 0; i < 16; i++)
+        {
+           Debug.Log(ButtonsAuto[i].name);
+        }
+	*/
     }
 
     public void sifirlaButonlari()
